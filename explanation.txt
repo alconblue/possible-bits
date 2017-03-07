@@ -1,0 +1,7 @@
+Let S(n) be the answer. i.e. the number of possible numbers with n bits and no consecutive 0s.
+And S(n, 1) and S(n,0) be the answer with the last bit as 1 and 0 respectively.
+Therefore, S(n) = S(n,1)+S(n,0).
+and S(n,1) = S(n-1,0)+S(n-1,1) = S(n-1).
+and S(n,0) = S(n-1,1) = S(n-2) => from above equation.
+So, S(n) = S(n-1) + S(n-2).
+Which is fibonacci sequence, but here S(1) = 2 and S(2) = 3.
